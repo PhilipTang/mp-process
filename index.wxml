@@ -1,0 +1,10 @@
+ <view class='order_process'>
+  <view class='process_wrap' wx:for="{{processData}}" wx:key="">
+    <text class='process_name'>{{item.name}}</text>
+    <view class='process'>
+      <view class='process_line' style="background:{{item.start}}"></view>
+      <image class='process_icon' src="{{item.icon}}"></image>
+      <view class='process_line' style="background:{{item.end}}"></view>
+    </view>
+  </view>
+</view>
